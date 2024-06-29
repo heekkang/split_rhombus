@@ -5,7 +5,7 @@ body {
   padding: 20px;
   font-family: "Orbit", sans-serif;
   overflow-x: hidden;
-  overflow-y: hidden;
+  
 }
 
 h1 {
@@ -45,28 +45,34 @@ iframe {
   transition: 1s;
 }
 
-h2 {
-  font-size: 2em;
-  margin: -5px 0px 20px 0px;
+summary{
+  font-size: 1.5em;
+  margin: 0px 0px 10px 0px;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker { /* Safari 브라우저용 사용자 정의 스타일 */
+  display: none;
+}
+summary {
+  list-style-type: none; /* 그 외의 브라우저용 사용자 정의 스타일 */
 }
 
 .subject {
-  position: absolute;
-  width: 100vw;
+  position: relative;
+  width: 100%;
   margin: 0;
-  padding: 20px;
+  padding: 5px;
   box-sizing: border-box;
-  box-shadow: 0px -5px 10px 5px rgba(0, 0, 0, 0.514);
+  border-top: solid 1.5px black;
   overflow-x: hidden;
   background-color: white;
 }
 
 #dictionary{
-  top: 60%;
-  left: 0;
+  
 }
 
 #live{
- top: 80%;
-  left: 0;
+ 
 }
