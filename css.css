@@ -42,7 +42,7 @@ iframe {
 
 .name:hover {
   background-color: greenyellow;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 summary{
