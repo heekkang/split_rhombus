@@ -21,8 +21,13 @@ $(document).ready(function() {
   });
 
 
+  function openLink13() {
+    window.open('https://zrihyyn.github.io/Queneau/', '_blank');
+}
 
-
+  function openLink12() {
+    window.open('https://zrihyyn.github.io/solar/', '_blank');
+}
 
   function openLink11() {
     window.open('http://bookfragments.com', '_blank');
