@@ -21,6 +21,25 @@ $(document).ready(function() {
   });
 
 
+
+  document.addEventListener('DOMContentLoaded', function() {
+      const menuItems = document.querySelectorAll('.minmin');
+  
+      menuItems.forEach(item => {
+          const originalText = item.textContent.trim();
+          const newText = item.getAttribute('data-text');
+  
+          item.addEventListener('mouseover', function() {
+              item.textContent = 이모지;
+          });
+  
+          item.addEventListener('mouseout', function() {
+              item.textContent =  금민정;
+          });
+      });
+  });
+
+  
   function openLink13() {
     window.open('https://zrihyyn.github.io/Queneau/', '_blank');
 }

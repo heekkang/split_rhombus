@@ -29,6 +29,7 @@
     />
     <link rel="stylesheet" href="css.css" />
     <script src="edit.js" defer></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <h1><반가른마름모/>ⓒ2024</h1>
@@ -40,222 +41,263 @@
         >instagram</a
       >
     </div>
+    
     <div>
-      <a class="name" target="_blank" href="https://www.instagram.com/geumpall/"
+      <span class='hover-me1'>
+      <a class="name hover-me1" target="_blank" href="https://www.instagram.com/geumpall/" id="minmin"
         >금민정</a
       >
-
-      <a class="name" target="_blank" href="https://www.instagram.com/shsta_/"
-        >김선형</a
-      >
+    </span>
+    <span class='hover-me2'>
+      <a class="name hover-me2" target="_blank" href="https://www.instagram.com/shsta_/"
+        >김선형</a>
+      </span>
+      <span class='hover-me3'>
       <a
-        class="name"
+        class="name hover-me3"
         target="_blank"
         href="https://www.instagram.com/the_rossouman/"
         >김수현</a
       >
+      </span>
+      <span class='hover-me4'>
       <a
-        class="name"
+        class="name hover-me4"
         target="_blank"
         href="https://www.instagram.com/jaehyvnkim/"
         >김재현</a
       >
-      <a class="name" target="_blank" href="https://www.instagram.com/seolah5/"
+      </span>
+      <span class='hover-me5'>
+      <a class="name hover-me5" target="_blank" href="https://www.instagram.com/seolah5/"
         >박설아</a
       >
-      <a class="name" target="_blank" href="https://www.instagram.com/yeon_346/"
+      </span>
+      <span class='hover-me6'>
+      <a class="name hover-me6" target="_blank" href="https://www.instagram.com/yeon_346/"
         >유서연</a
       >
-      <a
-        class="name"
+      </span>
+      <span class='hover-me'><a
+        class="name hover-me"
         target="_blank"
         href="https://www.instagram.com/heekyunghee/"
         >윤희경</a
-      >
-      <a class="name" target="_blank" href="https://www.instagram.com/hhhyezzz/"
+      ></span>
+      <span class='hover-me7'>
+      <a class="name hover-me7" target="_blank" href="https://www.instagram.com/hhhyezzz/"
         >신혜원</a
       >
-    </div>
-    <p style="font-size: 0.9em; margin: 10px 0px 10px 5px">
-      서울대학교 미술대학 코딩 동아리 반가른마름모의 아카이빙 사이트입니다.
-      <br />모든 작업물들은 데스크탑을 기준으로 제작되었습니다. 모바일 기기의
-      방문은 지양해주시면 감사하겠습니다.
-    </p>
-
-    <div class="subject" id="dictionary">
-      <details class="demo-details-juqery-accordion">
-        <summary>class="사전"</summary>
-        <div class="container">
-          
-          <div class="iframe-container">
-           
-            <iframe
-            target="_blank"
-            class="minjung"
-            src="http://bookfragments.com"
-            ></iframe>
-            <div class="iframe-overlay" onclick="openLink11()"></div>
-            <div class="icon">금민정</div>
-           
-          </div>
-        </div>
-      </details>
+    </span>
     </div>
 
-    <div class="subject" id="connect">
-      <details class="demo-details-juqery-accordion">
-        <summary>class="꼬리물기"</summary>
-        <div class="container">
-          
-          <div class="iframe-container">
-        
-            <iframe
-              target="_blank"
-              class="seoyun"
-              src="https://yyeon23.github.io/Yeon-SplitRhombus-Tail/"
-            ></iframe>
-            <div class="iframe-overlay" onclick="openLink10()"></div>
-            <div class="icon">유서연</div>
-          </div>
-          <div class="iframe-container">
-            
-          <iframe
-            target="_blank"
-            class="heegang"
-            src="https://heekkang.github.io/bag/edit/edit.html"
-          ></iframe>
-          <div class="iframe-overlay" onclick="openLink9()"></div>
-          <div class="icon">윤희경</div>
-        </div>
-        </div>
-        <div class="container">
-          
-          <div class="iframe-container">
-        
-            <iframe
-              target="_blank"
-              class="jaehyun"
-              src="https://zrihyyn.github.io/Queneau/"
-            ></iframe>
-            <div class="iframe-overlay" onclick="openLink13()"></div>
-            <div class="icon">김재현</div>
-          </div>
-        </div>
-      </details>
-    </div>
-
-    <div class="subject" id="live">
-      <details class="demo-details-juqery-accordion">
-        <summary>class="실시간"</summary>
-        <div class="container">
-          <div class="iframe-container">
-            
-          <iframe
-            target="_blank"
-            class="seonhyung"
-            src="https://lineshape.github.io/fineDustLevel/"
-          ></iframe>
-          <div class="iframe-overlay" onclick="openLink8()"></div>
-          <div class="icon">김선형</div>
-          </div>
-          <div class="iframe-container">
-            
-          <iframe
-            target="_blank"
-            class="soohyun"
-            src="https://rosssou.github.io/DoomTheEarth/"
-          ></iframe>
-          <div class="iframe-overlay" onclick="openLink7()"></div>
-          <div class="icon">김수현</div>
-          </div>
-</div>
-<div class="container">
-  <div class="iframe-container">
-    
-  <iframe
-    target="_blank"
-    class="seoyun"
-    src="https://yyeon23.github.io/Yeon-SplitRhombus-API/">
-</iframe>
-  <div class="iframe-overlay" onclick="openLink6()"></div>
-  <div class="icon">유서연</div>
-</div>
-<div class="iframe-container">
+    <div class="container">
+      <div class="gallery" id="column_1">
+        <div class="gallery-item">
   
-  <iframe
-    target="_blank"
-    class="heegang"
-    src="https://heekkang.github.io/bag/news/news.html"
-  ></iframe>
-  <div class="iframe-overlay" onclick="openLink5()"></div>
-  <div class="icon">윤희경</div>
-  </div>
-</div>
-
-<div class="container">
-<div class="iframe-container">
-  
-  <iframe
-    target="_blank"
-    class="seolah"
-    src="https://seolah-park.github.io/split_rhombus/"
-  ></iframe>
-  <div class="iframe-overlay" onclick="openLink4()"></div>
-  <div class="icon">박설아</div>
-  </div>
-  <div class="iframe-container">
-    <iframe
-      target="_blank"
-      class="jaehyun"
-      src="https://zrihyyn.github.io/solar/"
-    ></iframe>
-    <div class="iframe-overlay" onclick="openLink12()"></div>
-    <div class="icon">김재현</div>
-    </div>
-</div>
-        </div>
-      </details>
-    </div>
-
-
-    <div class="subject" id="archiving">
-      <details class="demo-details-juqery-accordion">
-        <summary>class="아카이빙"</summary>
-        <div class="container">
-          <div class="iframe-container">
-            
-          <iframe
-            target="_blank"
-            class="soonhyun"
-            src="https://rosssou.github.io/2023Repairmen/"
-          ></iframe>
-          <div class="iframe-overlay" onclick="openLink3()"></div>
-          <div class="icon">김수현</div>
-      </div>
-      <div class="iframe-container">
-          <iframe
-            target="_blank"
-            class="heegang"
-            src="https://heekkang.github.io/bag/bird/bird.html"
-          ></iframe>
+          <video src="mp4/1_희경_영상본.mp4" alt="희경 새" muted autoplay playsinline></video>
           <div class="iframe-overlay" onclick="openLink2()"></div>
-          <div class="icon">윤희경</div>
-          </div>
+          <button class="menu-toggle">❤️‍🔥</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>서울에서 발견되는 조류에 대한 사전이다. 서울연구원 출처의 '서울에서 볼 수 있는 새'라는 연구 내용을 기반으로 하고 있다. </a></li>
+              </ul>
+          </nav>
           
+        </div>
+        <div class="gallery-item">
+
+          <video src="mp4/01archive.mp4" alt="서연 일기" muted autoplay playsinline></video>
+          <div class="iframe-overlay" onclick="openLink1()"></div>
+          <button class="menu-toggle" id="test1">🫥</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>특정 장소를 기억하기 위한 메모 아카이빙. 이미지에 등장하는 인물의
+                    형상과 함께 단어들을 심는다.</a></li>
+              </ul>
+          </nav>
+
+        </div>
+        <div class="gallery-item">
+          
+          <video
+            src="mp4/김수현수리공_집기_아카이브_웹.mov"
+            alt="수현 아카이브"
+            muted autoplay playsinline
+          ></video>
+          <div class="iframe-overlay" onclick="openLink3()"></div>
+          <button class="menu-toggle" id="test1">🎲</button>
+          <nav class="menu">
+              <ul>
+                  <li><a> 2024년 1월 wrm space에서 열린 전시인 “수리공 Repairmen"에 쓰인
+                    전시용 구조물 아카이빙. 3D gif로 표현된 전시용 구조물은 마우스 클릭
+                    시 제작에 쓰인 재료 목록이 표시된다. *3D 오브젝트를 제외한 해당 웹의
+                    그래픽은 수리공 전시 아이덴티티를 따른다.</a></li>
+              </ul>
+          </nav>
+
+        </div>
+        <div class="gallery-item">
+          <video src="mp4/반가른마름모3_서연.mp4" alt="서연 시계" muted autoplay playsinline></video>
+          <button class="menu-toggle" id="test1">🫥</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>시간을 다루는 방법<br />
+
+                    (1) 클릭하여 시계를 생성할 수 있습니다.<br />
+                    (2) 새로운 시계를 생성하면 이전의 시계는 회전을 멈춥니다.<br />
+                    (3) 원하는 시점에 새로운 시계들을 생성하세요. 단, 시계를 '서둘러'
+                    새롭게 만들어내고자 한다면 시계도 그에 부응할 것이고, (4) '느긋하게'
+                    만들어낸다면 시계도 그렇게 할 것입니다.<br />
+                    힌트 : 10초</a></li>
+              </ul>
+        </div>
+        <div class="gallery-item">
+          
+          <video
+            src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-2.mp4"
+            alt="희경 네이버"
+            muted autoplay playsinline
+          ></video>
+          <div class="iframe-overlay" onclick="openLink5()"></div>
+          <button class="menu-toggle" id="test1">❤️‍🔥</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>네이버의 재미있는 지식 크롤링 네이버에서 검색창에 아무런 검색어
+                    없이 검색을 시도하면, 지식인, 지식백과에서 흥미로운 정보를
+                    전달해준다. 위 정보를 무작위로 크롤링해오는 간단한 사이트이다.</a></li>
+              </ul>
+        </div>
+        </div>
+        <div class="gallery" id="column_2">
+        <div class="gallery-item">
+          <video
+            src="mp4/화면 기록 2024-06-04 오후 10.52.51.mov"
+            alt="희경 사전"
+            muted autoplay playsinline
+          ></video>
+          <div class="iframe-overlay" onclick="openLink9()"></div>
+          <button class="menu-toggle" id="test1">❤️‍🔥</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>책을 만들기 위한 글자를 다루기 위한<br />
+
+                    본 웹사이트는 편집디자인, 타이포그래피에서 사용되는 용어를
+                    웹인터렉션으로 설명 가능한 영역에서 아카이빙한 사이트이다.
+                    텍스트만으로 설명하기 모호한 디자인의 문법을 움직임을 통하여 쉽게
+                    안내하는 것이 본 사이트의 목적이라 할 수 있다. 각각의 용어에 대한
+                    자세한 설명은 해당 div를 클릭함으로써 더 자세히 알 수 있을 것이다.
+                    아직 더욱 많은 용어들이 들어가야 완성이라 할 수 있기에 차후 추가될
+                    예정이다.</a></li>
+              </ul>
+
+        </div>
+        <div class="gallery-item">
+          <video src="mp4/video.mov" alt="혜원" muted autoplay playsinline></video>
+          <button class="menu-toggle" id="test1">☕️</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>Did you know that there are 8,751 mountains in South Korea?<br />
+
+                    핀란드에서 한국의 산을 주제로 웹사이트를 만들었다. p5.js를 이용해
+                    끊임없이 생성되는 산의 와이어프레임을 구현했고, 유저가 스크롤링을
+                    통해 뷰를 탐색할 수 있도록 했다. 설명 페이지에서는 자바스크립트의
+                    차트 라이브러리를 이용</a></li>
+              </ul>
+         
+        </div>
+        <div class="gallery-item">
+          
+          <video
+            src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-1.mp4"
+            alt="수현 지구"
+            muted autoplay playsinline
+          ></video>
+          <div class="iframe-overlay" onclick="openLink7()"></div>
+          <button class="menu-toggle" id="test1">🎲</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>Doom the Earth!<br/>
+                    실시간으로 자전하는 지구를 폭파시킬 수 있는 웹이다.
+                    지구를 마우스로 클릭하면 터질 것처럼 조금씩 붉게 물든다.
+                    다섯번째 클릭에 지구는 굉음과 함께 폭발하며, 실시간으로 흐르던 지구의 시간은 멈춘다.<br/>
+                    “You seriously wanna do this again?"이라고 말하는 해골이 달그락거리며 지나가는데, 그를 클릭하면 지구를 다시 폭파시킬 수 있다.</a></li>
+              </ul>
+
+        </div>
+
+        <div class="gallery-item">
+          
+          <video
+            src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-3.mp4"
+            alt="서연 위치 공유"
+            muted autoplay playsinline
+          ></video>
+          <div class="iframe-overlay" onclick="openLink6()"></div>
+          <button class="menu-toggle" id="test1">🫥</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>실시간 위치 API를 이용한 웹페이지. 접속자의 현재 위치와 입력한
+                    목적지 사이의 거리를 자간으로 가늠할 수 있다. 목적지에 가까울수록
+                    자간이 좁아지고, 멀수록 넓어진다. 빈 화면을 클릭/터치할 때 나타나는
+                    문구 역시 접속자의 현 위치와 목적지 사이 거리에 따라 달라진다.
+                    </a></li>
+              </ul>
+        </div>
+        <div class="gallery-item">
+          
+          <video
+            src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-3.mp4"
+            alt="설아 크롤링"
+            muted autoplay playsinline
+          ></video>
+          <div class="iframe-overlay" onclick="openLink4()"></div>
+          <button class="menu-toggle" id="test1">🕊️</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>실시간 위치 API를 이용한 웹페이지. 접속자의 현재 위치와 입력한
+                    목적지 사이의 거리를 자간으로 가늠할 수 있다. 목적지에 가까울수록
+                    자간이 좁아지고, 멀수록 넓어진다. 빈 화면을 클릭/터치할 때 나타나는
+                    문구 역시 접속자의 현 위치와 목적지 사이 거리에 따라 달라진다.
+                    </a></li>
+              </ul>
+
+        </div>
+        <div class="gallery-item">
+         
+          <video
+            src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-5.mp4"
+            alt="선형 날씨"
+            muted autoplay playsinline
+          ></video>
+          <div class="iframe-overlay" onclick="openLink8()"></div>
+          <button class="menu-toggle" id="test1">🥊</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>Geolocation API, 리버스 지오코드 API, 국내 시도별 미세먼지 API를
+                    활용해 사용자의 현재 위치 정보를 시도 단위로 수집하고, 이에 따른
+                    실시간 미세먼지 등급을 알려주는 웹사이트이다. 미세먼지 등급은
+                    Clear(좋음), Normal(보통), Unhealthy(나쁨), Very Unhealthy(매우
+                    나쁨)으로 나뉘며, 매 시 정각에 갱신된다. Clear 등급일 때는 마우스
+                    클릭에 따라 하트가 생성되는 인터랙션이 가능하다. 그 외 등급에서는
+                    화면에 먼지가 생성되고, 텍스트에 블러효과가 적용된다. 이 요소들은
+                    미세먼지 등급과 수치에 따라 증가하거나 심화되며, 마우스 움직임으로
+                    </a></li>
+              </ul>
+        </div>
+        <div class="gallery-item">
+          <div class="iframe-overlay" onclick="openLink12()"></div>
+          <video src="" alt="재현 양력" muted autoplay playsinline></video>
+          <p></p>
+        </div>
       </div>
-      <div class="container">
-  <div class="iframe-container">
-   
-  <iframe
-    target="_blank"
-    class="seoyun"
-    src="https://yyeon23.github.io/Yeon-SplitRhombus-Archive/"
-  ></iframe>
-  <div class="iframe-overlay" onclick="openLink1()"></div>
-  <div class="icon">유서연</div>
 </div>
-      </div>
-      </details>
-    </div>
+<div id="widget">
+  <p style="font-size: 0.9em; margin: 10px 0px 10px 5px">
+    서울대학교 미술대학 코딩 동아리 반가른마름모의 아카이빙 사이트입니다.
+    <br />모든 작업물들은 데스크탑을 기준으로 제작되었습니다. 모바일 기기의
+    방문은 지양해주시면 감사하겠습니다.
+  </p>
+</div>
   </body>
 </html>

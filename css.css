@@ -22,34 +22,62 @@ p {
 }
 
 .container{
-  position: relative;
-  display: grid; 
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
 }
 
-.iframe-container {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  margin: 0 auto;
+
+.gallery {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
 }
+
+.gallery-item {
+  width: 100%; /* 갤러리 아이템의 너비를 설정 */
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+.gallery-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+  transition: transform 0.2s;
+}
+
+.gallery-item video:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item p {
+  text-align: center;
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
 
 .iframe-overlay {
   position: absolute;
+  background-color: aqua;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   cursor: pointer;
   background: rgba(255, 255, 255, 0);
   /* Adjust the background transparency if needed */
 }
 
-iframe {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
+
 
 .name {
   font-size: 1.1em;
@@ -69,29 +97,9 @@ iframe {
   transition: 0.5s;
 }
 
-summary{
-  font-size: 1.5em;
-  margin: 0px 0px 10px 0px;
-  cursor: pointer;
-}
 
-summary::-webkit-details-marker { /* Safari 브라우저용 사용자 정의 스타일 */
-  display: none;
-}
-summary {
-  list-style-type: none; /* 그 외의 브라우저용 사용자 정의 스타일 */
-}
 
-.subject {
-  position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 5px;
-  box-sizing: border-box;
-  border-top: solid 1.5px black;
- 
-  background-color: white;
-}
+
 
 .icon {
   position: absolute;
@@ -102,4 +110,90 @@ summary {
   border-radius: 6em;
   font-size: 1em;
   pointer-events: none; /* Prevents icon from capturing hover events */
+}
+
+.hover-me a:hover:before {
+  content: '❤️‍🔥';
+
+}
+
+.hover-me1 a:hover:before {
+  content: '🌝';
+
+}
+
+
+.hover-me2 a:hover:before {
+  content: '🥊';
+
+}
+
+
+.hover-me3 a:hover:before {
+  content: '🎲';
+
+}
+.hover-me4 a:hover:before {
+  content: '❤️‍🔥';
+
+}
+.hover-me5 a:hover:before {
+  content: '🕊️';
+
+}
+
+.hover-me6 a:hover:before {
+  content: '🫥';
+
+}
+
+.hover-me7 a:hover:before {
+  content: '☕️';
+
+}
+
+.menu-toggle:hover {
+  transform: scale(1.25);
+}
+
+.menu-toggle {
+  cursor: pointer;
+  border: none;
+  color: none;
+  background-color: white;
+  font-size: 16px;
+  transition: transform 0.2s;
+  margin: 10px 0;
+}
+
+.menu {
+  display: none;
+text-align: left;
+font-size: 14px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 5px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+}
+
+.menu.active {
+  display: block;
+}
+
+#widget{
+  position: absolute;
+  
 }
