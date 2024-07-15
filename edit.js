@@ -103,3 +103,36 @@ hoverDiv.addEventListener('mousemove', (e) => {
 hoverDiv.addEventListener('mouseleave', () => {
     hoverIcon.style.display = 'none';
 });
+
+
+
+
+// DOM 요소를 가져옵니다.
+const mainDiv = document.getElementById('mainDiv');
+const container = document.getElementById('container');
+
+let isDragging = false;
+let offsetX, offsetY;
+
+// 마우스 클릭 이벤트를 추가합니다.
+mainDiv.addEventListener('mousedown', (e) => {
+  isDragging = true;
+
+  // 클릭한 위치의 좌표 값을 가져옵니다.
+  offsetX = e.clientX - mainDiv.getBoundingClientRect().left;
+  offsetY = e.clientY - mainDiv.getBoundingClientRect().top;
+});
+
+// 마우스를 놓았을 때 이벤트를 추가합니다.
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+});
+
+// 마우스를 따라 움직이는 함수
+document.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    // div를 마우스 위치로 이동시킵니다.
+    mainDiv.style.left = (e.clientX - offsetX) + 'px';
+    mainDiv.style.top = (e.clientY - offsetY) + 'px';
+  }
+});

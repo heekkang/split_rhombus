@@ -5,7 +5,6 @@ body {
   padding: 20px;
   font-family: "Orbit", sans-serif;
   overflow-x: hidden;
-  
 }
 
 h1 {
@@ -21,13 +20,12 @@ p {
   font-size: 1.2em;
 }
 
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 10px;
 }
-
 
 .gallery {
   width: 45%;
@@ -50,7 +48,7 @@ p {
   width: 100%;
   height: auto;
   display: block;
-  
+
   transition: transform 0.2s;
 }
 
@@ -64,7 +62,6 @@ p {
   font-size: 14px;
 }
 
-
 .iframe-overlay {
   position: absolute;
   background-color: aqua;
@@ -76,8 +73,6 @@ p {
   background: rgba(255, 255, 255, 0);
   /* Adjust the background transparency if needed */
 }
-
-
 
 .name {
   font-size: 1.1em;
@@ -97,15 +92,11 @@ p {
   transition: 0.5s;
 }
 
-
-
-
-
 .icon {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-color:greenyellow;
+  background-color: greenyellow;
   padding: 3px 12px 6px 12px;
   border-radius: 6em;
   font-size: 1em;
@@ -113,43 +104,33 @@ p {
 }
 
 .hover-me a:hover:before {
-  content: '❤️‍🔥';
-
+  content: "❤️‍🔥";
 }
 
 .hover-me1 a:hover:before {
-  content: '🌝';
-
+  content: "🌝";
 }
-
 
 .hover-me2 a:hover:before {
-  content: '🥊';
-
+  content: "🥊";
 }
-
 
 .hover-me3 a:hover:before {
-  content: '🎲';
-
+  content: "🎲";
 }
 .hover-me4 a:hover:before {
-  content: '❤️‍🔥';
-
+  content: "❤️‍🔥";
 }
 .hover-me5 a:hover:before {
-  content: '🕊️';
-
+  content: "🕊️";
 }
 
 .hover-me6 a:hover:before {
-  content: '🫥';
-
+  content: "🫥";
 }
 
 .hover-me7 a:hover:before {
-  content: '☕️';
-
+  content: "☕️";
 }
 
 .menu-toggle:hover {
@@ -168,8 +149,8 @@ p {
 
 .menu {
   display: none;
-text-align: left;
-font-size: 14px;
+  text-align: left;
+  font-size: 14px;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -193,7 +174,13 @@ font-size: 14px;
   display: block;
 }
 
-#widget{
+#mainDiv {
   position: absolute;
-  
+
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  top: 20px;
+  right: 20px;
+  cursor: grab;
 }

@@ -32,6 +32,7 @@
     <script src="script.js"></script>
   </head>
   <body>
+    <div id="container">
     <h1><반가른마름모/>ⓒ2024</h1>
     <div>
       <a
@@ -42,7 +43,7 @@
       >
     </div>
     
-    <div>
+    <div id="names">
       <span class='hover-me1'>
       <a class="name hover-me1" target="_blank" href="https://www.instagram.com/geumpall/" id="minmin"
         >금민정</a
@@ -95,8 +96,7 @@
       <div class="gallery" id="column_1">
         <div class="gallery-item">
   
-          <video src="mp4/1_희경_영상본.mp4" alt="희경 새" muted autoplay playsinline></video>
-          <div class="iframe-overlay" onclick="openLink2()"></div>
+          <video src="mp4/1_희경_영상본.mp4" alt="희경 새" muted autoplay playsinline onclick="openLink2()"></video>
           <button class="menu-toggle">❤️‍🔥</button>
           <nav class="menu">
               <ul>
@@ -107,8 +107,7 @@
         </div>
         <div class="gallery-item">
 
-          <video src="mp4/01archive.mp4" alt="서연 일기" muted autoplay playsinline></video>
-          <div class="iframe-overlay" onclick="openLink1()"></div>
+          <video src="mp4/01archive.mp4" alt="서연 일기" muted autoplay playsinline onclick="openLink1()"></video>
           <button class="menu-toggle" id="test1">🫥</button>
           <nav class="menu">
               <ul>
@@ -124,8 +123,9 @@
             src="mp4/김수현수리공_집기_아카이브_웹.mov"
             alt="수현 아카이브"
             muted autoplay playsinline
+            onclick="openLink3()"
           ></video>
-          <div class="iframe-overlay" onclick="openLink3()"></div>
+
           <button class="menu-toggle" id="test1">🎲</button>
           <nav class="menu">
               <ul>
@@ -138,7 +138,7 @@
 
         </div>
         <div class="gallery-item">
-          <video src="mp4/반가른마름모3_서연.mp4" alt="서연 시계" muted autoplay playsinline></video>
+          <video src="mp4/반가른마름모3_서연.mp4" alt="서연 시계" muted autoplay playsinline onclick="openLink10()"></video>
           <button class="menu-toggle" id="test1">🫥</button>
           <nav class="menu">
               <ul>
@@ -247,7 +247,7 @@
         <div class="gallery-item">
           
           <video
-            src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-3.mp4"
+            src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-4.mp4"
             alt="설아 크롤링"
             muted autoplay playsinline
           ></video>
@@ -292,12 +292,13 @@
         </div>
       </div>
 </div>
-<div id="widget">
+<div id="mainDiv">
   <p style="font-size: 0.9em; margin: 10px 0px 10px 5px">
     서울대학교 미술대학 코딩 동아리 반가른마름모의 아카이빙 사이트입니다.
     <br />모든 작업물들은 데스크탑을 기준으로 제작되었습니다. 모바일 기기의
     방문은 지양해주시면 감사하겠습니다.
   </p>
+</div>
 </div>
   </body>
 </html>
