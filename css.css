@@ -4,27 +4,43 @@ body {
   color: rgb(0, 0, 0);
   padding: 20px;
   font-family: "Orbit", sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(173,255,47,1) 0%, rgba(0,0,0,0) 30%);
+  
 }
 
 h1 {
   font-family: "Orbit", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3.2em;
+  font-size: 3em;
   padding: 0;
-  margin: -15px 0px 10px 0px;
+  margin: -20px 0px 10px 0px;
+  animation: animateText 1s ease-in-out forwards;
 }
+
+
 
 p {
   font-size: 1.2em;
 }
 
+#fix{
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
 .container {
+  overflow: scroll;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 10px;
+  height: 80vh;
+  width: 100vw;
+  
 }
 
 .gallery {
@@ -75,12 +91,13 @@ p {
 }
 
 .name {
-  font-size: 1.1em;
+  font-size: 0.8em;
   border: solid 1.5px black;
   padding: 3px 12px 6px 12px;
   border-radius: 6em;
   text-decoration: none;
   line-height: 3em;
+  background-color: white;
 }
 
 .name:visited {
@@ -174,13 +191,17 @@ p {
   display: block;
 }
 
-#mainDiv {
+#draggable{
   position: absolute;
-
-  width: 100px;
-  height: 100px;
-  background-color: lightblue;
-  top: 20px;
+  display: flex; /* Flexbox를 사용 */
+  justify-content: center; /* 자식 요소들을 가운데 정렬 */
+  align-items: center; /* 자식 요소들을 수직으로 가운데 정렬 */
+  width: 20%;
+background-color: greenyellow;
+  bottom: 20px;
   right: 20px;
   cursor: grab;
+  padding: 10px;
 }
+
+

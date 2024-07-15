@@ -33,7 +33,20 @@
   </head>
   <body>
     <div id="container">
-    <h1><반가른마름모/>ⓒ2024</h1>
+      <div id="fix">
+    <h1><반가른마름모/></h1>
+    <script>
+      // JavaScript를 사용하여 스크롤 위치에 따라 글자 크기를 조정
+      const scrollableArea = document.getElementById('scrollableArea');
+      const animatedText = document.querySelector('.animated-text');
+  
+      scrollableArea.addEventListener('scroll', function() {
+          // 스크롤 가능한 영역에서의 스크롤 위치를 가져옴
+          const scrollTop = scrollableArea.scrollTop;
+          // 글자 크기를 스크롤 위치에 따라 조정 (예시)
+          animatedText.style.fontSize = `${16 - scrollTop / 20}px`;
+      });
+  </script>
     <div>
       <a
         class="name"
@@ -91,7 +104,7 @@
       >
     </span>
     </div>
-
+    </div>
     <div class="container">
       <div class="gallery" id="column_1">
         <div class="gallery-item">
@@ -292,7 +305,7 @@
         </div>
       </div>
 </div>
-<div id="mainDiv">
+<div id="draggable">
   <p style="font-size: 0.9em; margin: 10px 0px 10px 5px">
     서울대학교 미술대학 코딩 동아리 반가른마름모의 아카이빙 사이트입니다.
     <br />모든 작업물들은 데스크탑을 기준으로 제작되었습니다. 모바일 기기의
