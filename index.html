@@ -27,26 +27,17 @@
       href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Orbit&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css.css" />
+    <link href="css.css" media="screen and (min-width: 400px) and (max-width: 1500px)" rel="stylesheet">
+    <link href="cssMini.css" media="screen and (max-width: 500px)" rel="stylesheet">
+
     <script src="edit.js" defer></script>
     <script src="script.js"></script>
   </head>
   <body>
     <div id="container">
       <div id="fix">
-    <h1><반가른마름모/></h1>
-    <script>
-      // JavaScript를 사용하여 스크롤 위치에 따라 글자 크기를 조정
-      const scrollableArea = document.getElementById('scrollableArea');
-      const animatedText = document.querySelector('.animated-text');
-  
-      scrollableArea.addEventListener('scroll', function() {
-          // 스크롤 가능한 영역에서의 스크롤 위치를 가져옴
-          const scrollTop = scrollableArea.scrollTop;
-          // 글자 크기를 스크롤 위치에 따라 조정 (예시)
-          animatedText.style.fontSize = `${16 - scrollTop / 20}px`;
-      });
-  </script>
+    <img src="타이틀.svg" alt="타이틀" id="title"/>
+    
     <div>
       <a
         class="name"
