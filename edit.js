@@ -1,9 +1,39 @@
- 
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.buttons button');
+  const items = document.querySelectorAll('.gallery-item');
+
+  buttons.forEach(button => {
+      button.addEventListener('click', () => {
+          const filter = button.getAttribute('data-filter');
+
+          items.forEach(item => {
+              if (filter === 'all') {
+                  item.classList.add('show');
+              } else {
+                  if (item.classList.contains(filter)) {
+                      item.classList.add('show');
+                  } else {
+                      item.classList.remove('show');
+                  }
+              }
+          });
+      });
+  });
+
+  // Trigger click event on the "All" button to show all items by default
+  document.querySelector('button[data-filter="all"]').click();
+});
+
+
+
 /*
 function openLink16() {
   window.open('', '_blank');
 }*/
 /*설아 사전*/  
+
+
+
 
 function openLink15() {
   window.open('https://zrihyyn.github.io/ingredients/', '_blank');
@@ -30,9 +60,12 @@ function openLink15() {
   function openLink11() {
     window.open('http://bookfragments.com', '_blank');
 }
+/* 민정 사전 */
+
   function openLink10() {
     window.open('https://yyeon23.github.io/Yeon-SplitRhombus-Tail/', '_blank');
 }
+
   function openLink9() {
     window.open('https://heekkang.github.io/bag/edit/edit.html', '_blank');
 }
