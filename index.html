@@ -27,26 +27,31 @@
       href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Orbit&display=swap"
       rel="stylesheet"
     />
-    <link href="css.css" media="screen and (min-width: 400px) and (max-width: 1500px)" rel="stylesheet">
-    <link href="cssMini.css" media="screen and (max-width: 500px)" rel="stylesheet">
+    <link href="css.css" media="screen and (min-width: 400px) and (max-width: 10000px)" rel="stylesheet">
+    <link href="cssMini.css" media="screen and (max-width: 400px)" rel="stylesheet">
 
     <script src="edit.js" defer></script>
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="container">
+    <span id="back">
+      <div class='v-line'></div>
+      <div class='v-line'></div>
+      <div class='v-line'></div>
+    </span>
+    <header>
       <div id="fix">
-    <img src="타이틀.svg" alt="타이틀" id="title"/>
-    
+        <div id="image-container">
+          <img src="타이틀.svg" alt="타이틀" id="title" class="resizable-image"/>
+        </div>
+    </div>
     <div>
       <a
         class="name"
         style="margin: 0px 0px 20px 0px"
         href="https://www.instagram.com/split_rhombus/"
-        >instagram</a
-      >
+        >instagram</a>
     </div>
-    
     <div id="names">
       <span class='hover-me1'>
       <a class="name hover-me1" target="_blank" href="https://www.instagram.com/geumpall/" id="minmin"
@@ -95,12 +100,35 @@
       >
     </span>
     </div>
-    </div>
+  </header>
+
+
+
     <div class="container">
-      <div class="gallery" id="column_1">
+      <div class="gallery" id="column_3">
+        <p style="font-size: 1.05em; margin: 0; font-weight: bold; margin-bottom: 10px;">
+          안녕하세요. 서울대학교 미술대학 코딩 동아리 반가른마름모의 아카이빙 사이트입니다.
+          <br />대부분의 작업물은 데스크탑을 기준으로 제작되었습니다. 모바일 기기보다는 데스크탑 이용을 권장드립니다.
+        </p>
         <div class="gallery-item">
   
-          <video src="mp4/1_희경_영상본.mp4" alt="희경 새" muted autoplay playsinline onclick="openLink2()"></video>
+          <video src="mp4/민정언니 사전.mp4" alt="민정 사전" muted loop autoplay playsinline onclick="openLink()"></video>
+          <button class="menu-toggle">❤️‍🔥</button>
+          <nav class="menu">
+              <ul>
+                  <li><a>완독에 대한 부담 없이 인상 깊은 책 속 문장들(이하 '책조각')을 공유할 수 있는 웹을 만들었다. 책조각의 키워드를 보고 흥미가 가는 책조각을 눌러 확인하거나, 장르별로 탐색하거나, 검색 기능을 통해 특정 단어나 작가, 제목을 찾아 탐색할 수 있다.
+                    <br/>
+                    부탁<br/>
+                    1. 모바일로도 보실 수 있으니까 놀러 오세요.
+                    <br/>
+                    2. 여러분의 책조각.. 공유좀 해주세요. 궁금하네요.</a></li>
+              </ul>
+          </nav>
+          
+        </div>
+        <div class="gallery-item">
+  
+          <video src="mp4/1_희경_영상본.mp4" alt="희경 새" muted loop autoplay playsinline onclick="openLink2()"></video>
           <button class="menu-toggle">❤️‍🔥</button>
           <nav class="menu">
               <ul>
@@ -109,9 +137,13 @@
           </nav>
           
         </div>
+        </div>
+        
+      <div class="gallery" id="column_1">
+       
         <div class="gallery-item">
 
-          <video src="mp4/01archive.mp4" alt="서연 일기" muted autoplay playsinline onclick="openLink1()"></video>
+          <video src="mp4/01archive.mp4" alt="서연 일기" muted loop autoplay playsinline onclick="openLink1()"></video>
           <button class="menu-toggle" id="test1">🫥</button>
           <nav class="menu">
               <ul>
@@ -126,7 +158,7 @@
           <video
             src="mp4/김수현수리공_집기_아카이브_웹.mov"
             alt="수현 아카이브"
-            muted autoplay playsinline
+            muted loop autoplay playsinline
             onclick="openLink3()"
           ></video>
 
@@ -142,7 +174,7 @@
 
         </div>
         <div class="gallery-item">
-          <video src="mp4/반가른마름모3_서연.mp4" alt="서연 시계" muted autoplay playsinline onclick="openLink10()"></video>
+          <video src="mp4/반가른마름모3_서연.mp4" alt="서연 시계" muted loop autoplay playsinline onclick="openLink10()"></video>
           <button class="menu-toggle" id="test1">🫥</button>
           <nav class="menu">
               <ul>
@@ -161,7 +193,7 @@
           <video
             src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-2.mp4"
             alt="희경 네이버"
-            muted autoplay playsinline
+            muted loop autoplay playsinline
           ></video>
           <div class="iframe-overlay" onclick="openLink5()"></div>
           <button class="menu-toggle" id="test1">❤️‍🔥</button>
@@ -176,9 +208,9 @@
         <div class="gallery" id="column_2">
         <div class="gallery-item">
           <video
-            src="mp4/화면 기록 2024-06-04 오후 10.52.51.mov"
+            src="mp4/희경 사전.mp4"
             alt="희경 사전"
-            muted autoplay playsinline
+            muted loop autoplay playsinline
           ></video>
           <div class="iframe-overlay" onclick="openLink9()"></div>
           <button class="menu-toggle" id="test1">❤️‍🔥</button>
@@ -197,7 +229,7 @@
 
         </div>
         <div class="gallery-item">
-          <video src="mp4/video.mov" alt="혜원" muted autoplay playsinline></video>
+          <video src="mp4/video.mov" alt="혜원" muted loop autoplay playsinline></video>
           <button class="menu-toggle" id="test1">☕️</button>
           <nav class="menu">
               <ul>
@@ -211,11 +243,10 @@
          
         </div>
         <div class="gallery-item">
-          
           <video
             src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-1.mp4"
             alt="수현 지구"
-            muted autoplay playsinline
+            muted loop autoplay playsinline
           ></video>
           <div class="iframe-overlay" onclick="openLink7()"></div>
           <button class="menu-toggle" id="test1">🎲</button>
@@ -235,7 +266,7 @@
           <video
             src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-3.mp4"
             alt="서연 위치 공유"
-            muted autoplay playsinline
+            muted loop autoplay playsinline
           ></video>
           <div class="iframe-overlay" onclick="openLink6()"></div>
           <button class="menu-toggle" id="test1">🫥</button>
@@ -253,7 +284,7 @@
           <video
             src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-4.mp4"
             alt="설아 크롤링"
-            muted autoplay playsinline
+            muted loop autoplay playsinline
           ></video>
           <div class="iframe-overlay" onclick="openLink4()"></div>
           <button class="menu-toggle" id="test1">🕊️</button>
@@ -272,7 +303,7 @@
           <video
             src="mp4/KakaoTalk_Video_2024-07-11-23-07-48-5.mp4"
             alt="선형 날씨"
-            muted autoplay playsinline
+            muted loop autoplay playsinline
           ></video>
           <div class="iframe-overlay" onclick="openLink8()"></div>
           <button class="menu-toggle" id="test1">🥊</button>
@@ -291,18 +322,14 @@
         </div>
         <div class="gallery-item">
           <div class="iframe-overlay" onclick="openLink12()"></div>
-          <video src="" alt="재현 양력" muted autoplay playsinline></video>
+          <video src="" alt="재현 양력" loop muted autoplay playsinline></video>
           <p></p>
         </div>
       </div>
 </div>
-<div id="draggable">
-  <p style="font-size: 0.9em; margin: 10px 0px 10px 5px">
-    서울대학교 미술대학 코딩 동아리 반가른마름모의 아카이빙 사이트입니다.
-    <br />모든 작업물들은 데스크탑을 기준으로 제작되었습니다. 모바일 기기의
-    방문은 지양해주시면 감사하겠습니다.
-  </p>
+<!--div id="draggable">
+
 </div>
-</div>
+--> 
   </body>
 </html>

@@ -1,7 +1,7 @@
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   const draggable = document.getElementById('draggable');
   let offsetX, offsetY;
   let isDragging = false;
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
+*/
 
   
   function openLink13() {
@@ -131,3 +131,5 @@ $(function(){
   });
   
 });
+
+
