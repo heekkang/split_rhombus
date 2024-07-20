@@ -23,6 +23,11 @@ header{
   padding: 30px 30px 10px 30px ;
 }
 
+#fix{
+  display: flex;
+  justify-content: space-between;
+}
+
 .resizable-image{
   width: 30em;
   transition: width 0.3s ease, height 0.3s ease;
@@ -32,8 +37,12 @@ header{
 }
 
 
-p {
+p, a {
   font-size: 0.9em;
+  white-space: pre-line;
+  text-align: left;
+  --paragraph-margin-bottom:10px;
+  word-break: keep-all;
 }
 
 
@@ -59,7 +68,7 @@ p {
 .gallery-item {
   width: 100%; /* 갤러리 아이템의 너비를 설정 */
   box-sizing: border-box;
-  cursor: pointer;
+
   text-align: center;
   position: relative;
 }
@@ -68,21 +77,22 @@ p {
   width: 100%;
   height: auto;
   display: block;
-
+  box-shadow: 0px 0px 5px #444;
   transition: transform 0.2s;
+  cursor: pointer;
 }
 
 .gallery-item video:hover {
   transform: scale(1.05);
-}
-
-.gallery-item p {
-  text-align: center;
-  margin: 5px 0 0 0;
-  font-size: 0.9em;
+  box-shadow: 0px 0px 5px #101010;
 }
 
 
+#names{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 
 .name {
   font-size: 1em;
@@ -90,7 +100,7 @@ p {
   padding: 3px 12px 6px 12px;
   border-radius: 6em;
   text-decoration: none;
-  line-height: 3em;
+
   background-color: white;
 }
 
@@ -144,12 +154,8 @@ p {
   content: "☕️";
 }
 
-/*.menu-toggle:hover {
-  transform: scale(1.25);
-}*/
 
 .menu-toggle {
-  cursor: pointer;
   border: none;
   color: none;
   background-color: rgba(255, 255, 255, 0);
@@ -176,27 +182,11 @@ p {
   padding: 5px;
 }
 
-.menu ul li a {
-  text-decoration: none;
-}
 
 .menu.active {
   display: block;
 }
 
-#draggable{
-position: fixed;
-  display: flex; /* Flexbox를 사용 */
-  justify-content: center; /* 자식 요소들을 가운데 정렬 */
-  align-items: center; /* 자식 요소들을 수직으로 가운데 정렬 */
-  width: 25%;
-  height: fit-content;
-  background-color: greenyellow;
-  bottom: 20px;
-  right: 20px;
-  cursor: grab;
-  padding: 10px;
-}
 
 
 #back{
@@ -212,3 +202,4 @@ position: fixed;
   border-left : 1px solid black;
   height: 100%;
 }
+

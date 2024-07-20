@@ -1,43 +1,31 @@
+ 
+/*
+function openLink16() {
+  window.open('', '_blank');
+}*/
+/*설아 사전*/  
+
+function openLink15() {
+  window.open('https://zrihyyn.github.io/ingredients/', '_blank');
+}
+/*재현 식품 사전*/  
 
 
-
-/*document.addEventListener('DOMContentLoaded', function() {
-  const draggable = document.getElementById('draggable');
-  let offsetX, offsetY;
-  let isDragging = false;
-
-  draggable.addEventListener('mousedown', function(e) {
-      isDragging = true;
-      offsetX = e.clientX - draggable.getBoundingClientRect().left;
-      offsetY = e.clientY - draggable.getBoundingClientRect().top;
-      draggable.style.cursor = 'grabbing';
-  });
-
-  document.addEventListener('mousemove', function(e) {
-      if (isDragging) {
-          draggable.style.left = e.clientX - offsetX + 'px';
-          draggable.style.top = e.clientY - offsetY + 'px';
-      }
-  });
-
-  document.addEventListener('mouseup', function() {
-      if (isDragging) {
-          isDragging = false;
-          draggable.style.cursor = 'grab';
-      }
-  });
-});
-
-*/
-
+  function openLink14() {
+    window.open('http://bookfragments.com', '_blank');
+}
+/*민정 사전*/
   
   function openLink13() {
     window.open('https://zrihyyn.github.io/Queneau/', '_blank');
 }
+/*재현 문체*/
 
   function openLink12() {
     window.open('https://zrihyyn.github.io/solar/', '_blank');
 }
+
+/*재현 양력*/
 
   function openLink11() {
     window.open('http://bookfragments.com', '_blank');
