@@ -124,7 +124,9 @@ button:hover {
 #names{
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 15px;
+  flex-wrap: wrap;
 }
 
 .name {
