@@ -111,6 +111,20 @@ button:hover {
   transition: 0.5s;
 }
 
+.mp4{
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0px 0px 5px #444;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+
+.mp4:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px #101010;
+}
 
 .gallery-item video {
   width: 100%;
