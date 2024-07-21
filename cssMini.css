@@ -1,0 +1,258 @@
+body {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-family: "Orbit", sans-serif;
+/*  background: linear-gradient(180deg, rgba(173,255,47,1) 0%, rgba(0,0,0,0) 30%);*/
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: fit-content;
+  
+}
+
+
+
+
+header{
+  position: sticky;
+  top: 0px; /* 도달했을때 고정시킬 위치 */
+  margin: 0;
+  z-index: 5;
+  padding: 10px ;
+  box-sizing: border-box;
+  width: 100vw;
+  
+}
+
+
+
+.resizable-image{
+  width: 96%;
+  padding: 10px 10px 14px 10px;
+
+}
+
+#fix{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#names{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#intro{
+  font-size: 0.9em; 
+  margin: 0; 
+  font-weight: bold; 
+  margin-bottom: 10px; 
+  line-height: 1.8em;
+}
+
+.name {
+  font-size: 0.8em;
+  border: solid 1.5px black;
+  padding: 0px 8px 3px 8px;
+  border-radius: 6em;
+  text-decoration: none;
+  background-color: white;
+}
+
+.name:visited {
+  color: black;
+}
+
+.name:hover {
+  background-color: greenyellow;
+  transition: 0.5s;
+}
+
+
+
+p, a {
+  font-size: 0.9em;
+  white-space: pre-line;
+  text-align: left;
+  --paragraph-margin-bottom:10px;
+  word-break: keep-all;
+}
+
+
+
+.container {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  z-index: 0;
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery-item {
+  width: 100%; /* 갤러리 아이템의 너비를 설정 */
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  display: none;
+}
+
+.gallery-item.show {
+  display: block;
+}
+
+.buttons {
+  margin-bottom: 10px;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+
+}
+
+button{
+  font-family: "Orbit", sans-serif;
+  word-break: keep-all;
+  cursor: pointer;
+  font-size: 0.8em;
+  border: solid 1.5px black;
+  padding: 0px 8px 3px 8px;
+  border-radius: 6em;
+  text-decoration: none;
+  background-color: white;
+  margin: 0;
+}
+
+button:hover {
+  
+  background-color: greenyellow;
+  transition: 0.5s;
+}
+
+
+.gallery-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0px 0px 5px #444;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.gallery-item video:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px #101010;
+}
+
+
+
+
+.icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: greenyellow;
+  padding: 3px 12px 6px 12px;
+  border-radius: 6em;
+  font-size: 1.2em;
+  pointer-events: none; /* Prevents icon from capturing hover events */
+}
+
+.hover-me a:hover:before {
+  content: "❤️‍🔥";
+}
+
+.hover-me1 a:hover:before {
+  content: "🌝";
+}
+
+.hover-me2 a:hover:before {
+  content: "🥊";
+}
+
+.hover-me3 a:hover:before {
+  content: "🎲";
+}
+.hover-me4 a:hover:before {
+  content: "❤️‍🔥";
+}
+.hover-me5 a:hover:before {
+  content: "🕊️";
+}
+
+.hover-me6 a:hover:before {
+  content: "🫥";
+}
+
+.hover-me7 a:hover:before {
+  content: "☕️";
+}
+
+
+.menu-toggle {
+  font-style: oblique;
+  font-size: 16px;
+  transition: transform 0.2s;
+  margin: 10px 0;
+  font-weight: bold;
+  
+}
+
+.menu {
+  text-align: left;
+  font-size: 14px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 5px;
+}
+
+
+.menu.active {
+  display: block;
+}
+
+
+
+#back{
+  gap: 10px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: -5;
+}
+
+.v-line {
+  border-left : 1px solid black;
+  height: 100%;
+}
+
